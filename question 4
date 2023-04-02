@@ -1,0 +1,18 @@
+#question 4
+class Account:
+    def __init__(self, title=None, balance=0):
+        self.title = title
+        self.balance = balance
+
+
+class SavingsAccount(Account):
+    def __init__(self, title=None, balance=0, interestRate=0):
+            super().__init__(title, balance)
+            self.interestRate = interestRate
+name=input("enter name : ")
+balance = int(input("enter the balance : "))
+interest = int(input("enter the interest: "))
+
+task4=Account(name,balance)
+
+task2=SavingsAccount(name, balance, interest)
